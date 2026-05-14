@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zasons - Surgical Items & Medical Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo-link">
+        <img src="logo.svg" alt="Zasons logo" class="logo-img">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Zasons</h1>
+      <p class="tagline">Premium Surgical Items & Medical Solutions</p>
+      <p class="subtitle">Excellence in Medical Equipment | Trusted by Professionals</p>
+      <button class="cta-btn" onclick="scrollToContact()">Get in Touch</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Zasons</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Founder & Owner</h3>
+          <p><strong>Zahid Hussain</strong></p>
+          <p>With extensive experience in medical marketing and healthcare solutions, Zahid Hussain leads Zasons with a commitment to delivering premium surgical items and medical equipment to healthcare professionals across the region.</p>
+          
+          <h3>Our Mission</h3>
+          <p>To provide high-quality surgical instruments and medical solutions that meet international standards, enabling healthcare professionals to deliver exceptional patient care.</p>
+          
+          <h3>Why Choose Zasons?</h3>
+          <ul class="features-list">
+            <li>✓ Premium Quality Surgical Items</li>
+            <li>✓ International Standards & Certifications</li>
+            <li>✓ Expert Medical Marketing Knowledge</li>
+            <li>✓ Reliable Delivery & Support</li>
+            <li>✓ Competitive Pricing</li>
+            <li>✓ Professional Consultation Services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-icon">🔬</div>
+          <h3>Surgical Instruments</h3>
+          <p>Complete range of precision-engineered surgical instruments for general, orthopedic, and specialized procedures.</p>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🏥</div>
+          <h3>Hospital Equipment</h3>
+          <p>State-of-the-art medical equipment for clinics, hospitals, and diagnostic centers.</p>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">💉</div>
+          <h3>Consumables & Supplies</h3>
+          <p>High-quality disposable medical supplies and consumables for healthcare facilities.</p>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">🩺</div>
+          <h3>Diagnostic Equipment</h3>
+          <p>Advanced diagnostic tools and equipment for accurate medical assessment and monitoring.</p>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">👨‍⚕️</div>
+          <h3>Specialized Solutions</h3>
+          <p>Custom medical solutions tailored to specific healthcare facility requirements.</p>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">📦</div>
+          <h3>Distribution Services</h3>
+          <p>Efficient supply chain management and nationwide distribution network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Product Consultation</h3>
+          <p>Expert guidance in selecting the right surgical items and medical equipment for your facility's specific needs.</p>
+        </div>
+        <div class="service-item">
+          <h3>Quality Assurance</h3>
+          <p>All products undergo rigorous quality testing and comply with international medical standards.</p>
+        </div>
+        <div class="service-item">
+          <h3>Training & Support</h3>
+          <p>Comprehensive training and after-sales support for medical professionals using our equipment.</p>
+        </div>
+        <div class="service-item">
+          <h3>Supply Management</h3>
+          <p>Streamlined inventory management and timely delivery of surgical supplies to your facility.</p>
+        </div>
+        <div class="service-item">
+          <h3>Medical Marketing</h3>
+          <p>Leverage our expertise in healthcare marketing to promote your medical services and products.</p>
+        </div>
+        <div class="service-item">
+          <h3>Custom Solutions</h3>
+          <p>Tailored surgical and medical solutions designed for specialized medical procedures and requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><strong>Owner:</strong> Zahid Hussain</p>
+          <p><strong>Company:</strong> Zasons</p>
+          <p><strong>Specialization:</strong> Surgical Items & Medical Solutions</p>
+          
+          <div class="contact-methods">
+            <p><strong>📞 Phone:</strong> <a href="tel:033157292339">033157292339</a></p>
+            <p><strong>✉️ Email:</strong> Contact us for inquiries</p>
+            <p><strong>🏥 Services:</strong> Medical Equipment, Surgical Instruments, Healthcare Solutions</p>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Zasons - Surgical Items & Medical Solutions. All rights reserved.</p>
+      <p>Owner: Zahid Hussain | Expertise in Medical Marketing & Healthcare Solutions</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
